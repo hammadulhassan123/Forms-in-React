@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('/Lato2OFL/Lato-Bold.ttf');
+@import url('/Lato2OFL/Lato-Regular.ttf');
+
+/* Rest of your CSS styles */
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,18 +13,27 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../public/Lato2OFL/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../public/Lato2OFL/Lato-Bold.ttf");
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 187,247,208;
+    --background-end-rgb: 187,247,208;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      195deg,
       transparent,
       rgb(var(--background-end-rgb))
     )
