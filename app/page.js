@@ -31,7 +31,7 @@ export default function Home() {
     onSubmit: (values)=>{    
       console.log("form submitted");
       console.log(values);
-      router.push({pathname: "/success", query: values});
+      router.push("/success", values);
     },
   });
 
